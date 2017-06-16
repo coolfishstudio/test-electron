@@ -6,6 +6,7 @@ const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const path = require('path');
 
+const packageJSON = require('./package.json')
 
 // 声明一个BrowserWindow对象实例
 let mainWindow;
@@ -25,6 +26,7 @@ function createWindow () {
     mainWindow.on('closed', function () {
         mainWindow = null;
     });
+    console.log(packageJSON.version)
     // 打开开发者工具
     // mainWindow.webContents.openDevTools();
 

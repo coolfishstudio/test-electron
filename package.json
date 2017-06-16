@@ -14,8 +14,8 @@
     "electron-builder": "^18.6.2"
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
+    "productName": "ttt",
+    "appId": "org.develar.ttt",
     "dmg": {
       "contents": [
         {
