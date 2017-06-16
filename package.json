@@ -1,0 +1,34 @@
+{
+  "name": "t-electron",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ./app/main.js",
+    "build": "build --publish never"
+  },
+  "author": "Yves",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-builder": "^18.6.2"
+  },
+  "build": {
+    "productName": "ElectronReact",
+    "appId": "org.develar.ElectronReact",
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    }
+  }
+}
